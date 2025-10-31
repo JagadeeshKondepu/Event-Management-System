@@ -1,0 +1,235 @@
+.system-chart {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem;
+}
+
+.chart-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.chart-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.chart-header p {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.flow-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.start-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.flow-node {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.flow-node:hover {
+  transform: translateY(-2px);
+}
+
+.start-node {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.process-node {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  font-size: 1.1rem;
+}
+
+.flow-arrow {
+  font-size: 2rem;
+  color: #667eea;
+  margin: 0.5rem 0;
+}
+
+.roles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.role-branch {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.role-branch:hover {
+  transform: translateY(-5px);
+}
+
+.role-header {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.role-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.admin-node {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.vendor-node {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.user-node {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.functions-list {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.functions-list h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.function-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.admin-function {
+  background: rgba(102, 126, 234, 0.1);
+  border-left: 3px solid #667eea;
+}
+
+.vendor-function {
+  background: rgba(240, 147, 251, 0.1);
+  border-left: 3px solid #f093fb;
+}
+
+.user-function {
+  background: rgba(79, 172, 254, 0.1);
+  border-left: 3px solid #4facfe;
+}
+
+.function-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.function-icon {
+  font-size: 1.2rem;
+}
+
+.features-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.features-section h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .system-chart {
+    padding: 1rem;
+  }
+  
+  .chart-header h1 {
+    font-size: 2rem;
+  }
+  
+  .roles-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-section {
+    padding: 2rem;
+  }
+}
